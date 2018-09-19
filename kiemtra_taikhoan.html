@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtra</title>
+</head>
+<body>
+<input type="text" id="check">
+<input type="button" value="Submit" onclick="isAccount()">
+<script>
+    function isAccount() {
+        let str = document.getElementById('check').value;
+        let patterm = /^[_a-z0-9]{6,}$/;
+        if (patterm.test(str) === true){
+            alert("Account Validate");
+        } else {
+            alert("Account is Not Validate");
+        }
+    }
+</script>
+</body>
+</html>
